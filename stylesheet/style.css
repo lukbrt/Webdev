@@ -16,13 +16,13 @@ body
   overflow: hidden;
 }
 
-#header
+#main-header
 {
-  margin-top: 20 px;
+  /* padding-top: 20 px; */
   background-color: #FFEAC1;
 }
 
-#header img
+#main-header img
 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -36,11 +36,11 @@ body
 #navbar ul
 {
   padding: 0;
+  list-style:none;
 }
 
 #navbar li
 {
-  list-style-type:none;
   display: inline;
   padding-top: 15px;
   padding-bottom: 15px;
