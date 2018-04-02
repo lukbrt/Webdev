@@ -46,8 +46,8 @@ body
 
 #navbar ul
 {
-  margin: 0;
-  padding: 15px 10px 15px 0px;
+  padding: 0;
+ /*padding: 15px 10px 15px 0px;*/
   list-style:none;
 }
 
@@ -63,7 +63,8 @@ body
   text-decoration: none;
   color:#FFFCE1;
   font-size: 22px;
-  padding: 15px 20px 15px 0;
+  /*padding: 15px 20px 15px 0;*/
+  padding-right: 20px;
 }
 
 #navbar a:hover
@@ -341,13 +342,14 @@ body
   .box p
   {
     padding: 0px;
-    font-size: 12px;
+    font-size: 16px;
     margin: 5px;
+    line-height: 1.4em;
   }
 
   .box h2
   {
-    font-size: 18px;
+    font-size: 20px;
     margin: 5px !important;
     padding: 0;
   }
@@ -378,6 +380,5 @@ body
   {
     display: inline;
     padding-right: 10px;
-    font-size: 14px;
   }
 }
