@@ -9,11 +9,22 @@ body
   /* 66B97B     D03B17 */
 }
 
+/*p
+{
+  font-size: 16px;
+  line-height: 1.6em;
+}*/
+
 .container
 {
   width: 80%;
   margin: auto;
   overflow: hidden;
+}
+
+::selection
+{
+  background: #C13CCA;
 }
 
 #main-header
@@ -36,8 +47,7 @@ body
 #navbar ul
 {
   margin: 0;
-  padding: 15px;
-  padding-left: 0;
+  padding: 15px 10px 15px 0px;
   list-style:none;
 }
 
@@ -59,7 +69,7 @@ body
 #navbar a:hover
 {
   text-decoration: none;
-  color:#761D36;
+  color:#762A36;
   font-size: 22px;
 }
 
@@ -100,6 +110,11 @@ body
   padding: 0;
 }
 
+#fanpage a:hover
+{
+  filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+}
+
 #main
 {
   float: left;
@@ -114,7 +129,7 @@ body
   float: right;
   width: 30%;
   background: #90F567;
-  margin: 25px 0 0 0;
+  margin: 25px 0 25px 0;
   padding: 15px 10px;
   box-sizing: border-box;
 }
@@ -125,14 +140,121 @@ body
   line-height: 1.6em;
 }
 
+#sidebar h2
+{
+  margin: 5px 0 5px 10px;
+}
+
+#boxes
+{
+  background: #F5BF2F;
+}
+
+#boxes h1
+{
+
+}
+
+.box
+{
+  box-sizing: border-box;
+  float: left;
+  width: 30%;
+  text-align: center;
+  border: 3px dotted #FFE1D1;
+  padding: 50px;
+  border-radius: 50%;
+  margin: 0 20px 30px 20px;
+}
+
+.box h2
+{
+  color: #262624;
+  margin: 5px;
+}
+
+.box p
+{
+  margin: 10px 15px;
+}
+
+#newsletter
+{
+  background: #295C43;
+  /*margin: 0 auto;*/
+  margin: auto;
+/*    display: block;
+  width: 100%;*/
+  min-height: 150px;
+}
+
+#newsletter h1
+{
+  color: #fff;
+
+}
+
+#newsletter-form
+{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#newsletter-form input
+{
+  padding: 10px 20px;
+  margin: 0;
+  outline: 0;
+  font-size: 18px;
+  font-family: Tahoma;
+}
+
+#newsletter-form input[type=email]
+{
+  display: inline-block;
+  width: 30%;
+  background: transparent;
+  border: 3px solid white;
+  /*margin: 10px auto 40px auto;*/
+  /*font-size: 18px;*/
+  color: #fff;
+  margin-right: 10px;
+}
+
+#newsletter-form input[type="submit"]
+{
+  background-color: transparent;
+  border: 3px solid #FAF6F2;
+/*  font-family: Tahoma;
+  font-weight: 100;*/
+
+  color: #FAF6F2;
+}
+
+#newsletter-form input[type="submit"]:hover
+{
+  border-color: #fff;
+  background-color: #160017;
+  color: #fff;
+  font-weight: 300;
+}
+
 #foot
 {
   background: #762A36;
+/*    background-image: url('../images/abstract-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;*/
   color: #FFFEE1;
   text-align: center;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
   padding: 10px;
+  /*padding-top: 30px;*/
   font-size: 16px;
+  color: #C2B509;
 }
 
 .button
@@ -142,7 +264,7 @@ body
   border: 2px solid #FAF6F2;
   font-family: Tahoma;
   font-weight: 100;
-  font-size: 16px;
+  font-size: 18px;
   color: #FAF6F2;
   margin-bottom: 15px;
 }
@@ -150,7 +272,7 @@ body
 .button:hover
 {
   border-color: #fff;
-  background-color: #0D0D0C;
+  background-color: #160017;
   color: #fff;
   font-weight: 300;
 }
@@ -160,9 +282,86 @@ body
   outline: 0;
 }
 
+@media(max-width: 1520px)
+{
+  .box
+  {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .box img
+  {
+    width: 75px;
+    height: 75px;
+  }
+
+  .box p
+  {
+    padding: 0px;
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .box h2
+  {
+    font-size: 18px;
+    margin: 5px !important;
+    padding: 0;
+  }
+}
+
+@media(max-width: 850px)
+{
+  #boxes
+  {
+    text-align: center;
+  }
+
+  #boxes h1
+  {
+    text-align: left;
+  }
+
+  .box
+  {
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .box img
+  {
+    width: 75px;
+    height: 75px;
+  }
+
+  .box p
+  {
+    padding: 0px;
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .box h2
+  {
+    font-size: 18px;
+    margin: 5px !important;
+    padding: 0;
+  }
+}
+
 
 @media(max-width: 600px)
 {
+/*  #navbar a
+  {
+    padding-right: 5px;
+    padding-left: 5px;
+  }*/
+
   #main
   {
     float: none;
@@ -173,5 +372,12 @@ body
   {
     float: none;
     width: 100%;
+  }
+
+  #navbar li
+  {
+    display: inline;
+    padding-right: 10px;
+    font-size: 14px;
   }
 }
