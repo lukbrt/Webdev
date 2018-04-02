@@ -35,15 +35,17 @@ body
 
 #navbar ul
 {
-  padding: 0;
+  margin: 0;
+  padding: 15px;
+  padding-left: 0;
   list-style:none;
 }
 
 #navbar li
 {
   display: inline;
-  padding-top: 15px;
-  padding-bottom: 15px;
+/*  padding-top: 15px;
+  padding-bottom: 15px;*/
 }
 
 #navbar a
@@ -59,4 +61,117 @@ body
   text-decoration: none;
   color:#761D36;
   font-size: 22px;
+}
+
+#showcase
+{
+  background-image: url('../images/bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 300px;
+  text-align: center;
+}
+
+#showcase h1
+{
+  padding-top: 55px;
+  color: #FFFEE1;
+  font-size: 60px;
+  line-height: 1.4em;
+  margin: 20px;
+}
+
+#fanpage
+{
+  position: fixed;
+  top: 45%;
+
+}
+
+#fanpage img
+{
+  height: 50px;
+  width: 50px;
+}
+#fanpage ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main
+{
+  float: left;
+  width: 70%;
+  padding: 15px;
+  box-sizing: border-box;
+  line-height: 1.6em;
+}
+
+#sidebar
+{
+  float: right;
+  width: 30%;
+  background: #90F567;
+  margin: 25px 0 0 0;
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
+
+#sidebar p
+{
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+#foot
+{
+  background: #762A36;
+  color: #FFFEE1;
+  text-align: center;
+  margin-top: 60px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button
+{
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 2px solid #FAF6F2;
+  font-family: Tahoma;
+  font-weight: 100;
+  font-size: 16px;
+  color: #FAF6F2;
+  margin-bottom: 15px;
+}
+
+.button:hover
+{
+  border-color: #fff;
+  background-color: #0D0D0C;
+  color: #fff;
+  font-weight: 300;
+}
+
+.button:focus
+{
+  outline: 0;
+}
+
+
+@media(max-width: 600px)
+{
+  #main
+  {
+    float: none;
+    width: 100%;
+  }
+
+    #sidebar
+  {
+    float: none;
+    width: 100%;
+  }
 }
