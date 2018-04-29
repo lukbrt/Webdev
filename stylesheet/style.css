@@ -251,14 +251,15 @@ body
 
 }
 
-#newsletter-form
+#newsletter-form, #contact
 {
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
-#newsletter-form input
+/* #newsletter-form  */
+input 
 {
   padding: 10px 20px;
   margin: 0;
@@ -295,6 +296,13 @@ body
   background-color: #160017;
   color: #fff;
   font-weight: 300;
+}
+
+/* Contact section */
+
+#contact input:not([type="submit"])
+{
+  display: block;
 }
 
 #foot
