@@ -105,7 +105,7 @@ body
   margin: 20px;
   position: relative;
   animation: heading;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -134,6 +134,7 @@ body
 {
   position: fixed;
   top: 45%;
+  z-index: 1;
 
 }
 
@@ -147,6 +148,20 @@ body
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+#fanpage li
+{
+  animation: socialAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes socialAnimation
+{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 #fanpage a:hover
@@ -171,6 +186,7 @@ body
   margin: 25px 0 25px 0;
   padding: 15px 10px;
   box-sizing: border-box;
+  box-shadow: -5px -5px 0 rgb(185, 255, 203);
 }
 
 #sidebar p
@@ -251,7 +267,7 @@ body
 
 }
 
-#newsletter-form, #contact
+#newsletter-form
 {
   display: inline-block;
   width: 100%;
@@ -259,10 +275,10 @@ body
 }
 
 /* #newsletter-form  */
-input 
+input, textarea
 {
   padding: 10px 20px;
-  margin: 0;
+  margin: auto;
   outline: 0;
   font-size: 18px;
   font-family: Tahoma;
@@ -299,12 +315,85 @@ input
 }
 
 /* Contact section */
-
-#contact input:not([type="submit"])
+#contact
 {
-  display: block;
+  background-color: #8AFFA7;
+  margin: auto;
+  width: 100%;
+
+  /* display: inline-block;
+  width: 100%;
+  text-align: center; */
 }
 
+
+#contact input:not([type="submit"]), textarea
+{
+  display: block;
+  width: 30%;
+  background: transparent;
+  border: 3px solid #737373;
+  margin-bottom: 15px;
+  /*margin: 10px auto 40px auto;*/
+  /*font-size: 18px;*/
+  color: #737373;
+}
+
+#contact input::placeholder
+{
+  color: #737373;
+}
+
+#contact textarea
+{
+  resize: none;
+  height: 100px;
+}
+
+#contact #contactSubmit
+{
+  width: 30%;
+  margin: auto;
+  padding: 0;
+}
+
+#contact input[type="submit"]
+{
+  display: block;
+  background-color: transparent;
+  border: 3px solid #737373;
+  color: #737373;
+  /* float: center; */
+  margin-bottom: 30px;
+}
+
+#contact input[type="submit"]:hover
+{
+  /* border-color: #737373; */
+  background-color: #fff;
+  /* color: #737373; */
+}
+
+/* google maps loc */
+#mapHeadline
+{
+  background-color: #295C43;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  margin: 0;
+  width: 15%;
+  box-shadow: 4px -4px 0 #F5BF2F;
+}
+
+#map
+{
+  width: 100%;
+  min-height: 350px;
+  background-color: #262624;
+}
+
+
+/* footer */
 #foot
 {
   background: #762A36;

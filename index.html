@@ -15,11 +15,12 @@
     <nav id="navbar">
     	<div class="container">
 	      <ul>
-	        <a href="#"><li>Home</li></a>
-	        <a href="#"><li>About us</li></a>
+	        <a href="index.html"><li>Home</li></a>
+	        <a href="#boxes"><li>About us</li></a>
 	        <a href="#"><li>Offer</li></a>
 	        <a href="#"><li>Team</li></a>
-	        <a href="#"><li>Contact</li></a>
+					<a href="#contact"><li>Contact</li></a>
+					<a href="#map"><li>Map</li></a>
 	      </ul>
 	    </div>
     </nav>
@@ -89,15 +90,40 @@
 
 	<section id="contact">
 		<div class="container">
+			<h1>#Contact</h1>
 			<form class="contactForm">
 				<input type="text" name="firstname" placeholder="Name">
 				<input type="text" name="lastname" placeholder="Last name">
 				<input type="email" name="email" placeholder="Email">
 				<textarea name="message" placeholder="Your message"></textarea>
-				<input type="submit" value="SEND" name="sendButton">
+				<div id="contactSubmit">
+					<input type="submit" value="SEND" name="sendButton">
+				</div>
 			</form>
+
+			<h1 id="mapHeadline">#Where we are</h1>
 		</div>
 	</section>
+
+
+	<script>
+      function initMap() { 
+        var uluru = {lat: 51.809655, lng: 22.935746};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcwspE9w-o1lA5sBeyby-ts1ybnWPLwyo&callback=initMap">
+		</script>
+
+	<div id="map"></div>
 
     <section id="newsletter">
     	<div class="container">
