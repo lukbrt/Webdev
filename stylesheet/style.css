@@ -219,7 +219,8 @@ body
   width: 30%;
   text-align: center;
   border: 3px dotted #FFE1D1;
-  padding: 50px;
+  padding: 5% 5%;
+  /* padding: 50px; */
   border-radius: 50%;
   margin: 0 10px 20px 10px;
 }
