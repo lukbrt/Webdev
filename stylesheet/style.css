@@ -205,6 +205,7 @@ body
   /* margin-top: 20px; */
   margin: auto;
   background: #F5BF2F;
+  text-align: center;
 }
 
 /* #boxes h1
@@ -222,7 +223,8 @@ body
   padding: 5% 5%;
   /* padding: 50px; */
   border-radius: 50%;
-  margin: 0 10px 20px 10px;
+  /* margin: 0 10px 20px 10px; */
+  margin: 0 1em 2em 1em;
 }
 
 #boxes .box img
@@ -331,7 +333,7 @@ input, textarea
 #contact input:not([type="submit"]), textarea
 {
   display: block;
-  width: 30%;
+  width: 40%;
   background: transparent;
   border: 3px solid #737373;
   margin-bottom: 15px;
@@ -351,15 +353,21 @@ input, textarea
   height: 100px;
 }
 
-#contact #contactSubmit
+/* #contact #contactSubmit
 {
-  width: 30%;
+  width: 40%;
+  padding: 10px 50px;
   margin: auto;
   padding: 0;
-}
+} */
 
 #contact input[type="submit"]
 {
+  /* width: 40%; */
+  /* padding: 10px 50px; */
+  padding: 10px 3em;
+  margin: auto;
+
   display: block;
   background-color: transparent;
   border: 3px solid #737373;
@@ -382,7 +390,7 @@ input, textarea
   padding: 10px 20px 10px 20px;
   color: white;
   margin: 0;
-  width: 15%;
+  width: fit-content;
   box-shadow: 4px -4px 0 #F5BF2F;
 }
 
@@ -451,10 +459,10 @@ input, textarea
     margin: auto;
   }
 
-  .box
+  #boxes .box
   {
-    margin-right: 10px;
-    margin-left: 0;
+    /* margin-right: 10px;
+    margin-left: 0; */
   }
 
   .box img
@@ -466,7 +474,7 @@ input, textarea
   .box p
   {
     padding: 0px;
-    font-size: 12px;
+    font-size: 14px;
     margin: 5px;
   }
 
@@ -475,6 +483,15 @@ input, textarea
     font-size: 18px;
     margin: 5px !important;
     padding: 0;
+  }
+}
+
+@media(max-width: 1220px)
+{
+  #boxes .box
+  {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -490,13 +507,15 @@ input, textarea
     text-align: left;
   }
 
-  .box
+  #boxes .box
   {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     float: none;
     width: 100%;
+    min-width: 200px;
     margin-right: 10px;
     margin-left: 0;
+    padding: 10%;
   }
 
   .box img
@@ -518,6 +537,17 @@ input, textarea
     font-size: 20px;
     margin: 5px !important;
     padding: 0;
+  }
+
+  #contact input:not([type="submit"]), textarea
+  {
+    width: 50%;
+  }
+
+  #contact input[type="submit"]
+  {
+    display: block;
+    width: 50%;
   }
 }
 
