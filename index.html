@@ -6,34 +6,9 @@
 		<title>First website</title>
 
 		<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
-			<script>
-					$(function() {
-							$('a[href*=#]:not([href=#])').click(function() {
-									if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-											var target = $(this.hash);
-											target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-											if (target.length) {
-													$('html,body').animate({
-															scrollTop: target.offset().top
-													}, 1000);
-													return false;
-											}
-									}
-							});
-					});
-				</script>
-
-			<script>
-				function scrollFunction(funcName) 
-				{
-						document.getElementById(funcName).scrollIntoView();
-				}
-			</script>
-
     <header id="main-header">
       <div class="container">
         <img src="images/logo.png" alt="logo" />
@@ -133,6 +108,9 @@
 	</section>
 
 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<script>
       function initMap() { 
         var uluru = {lat: 51.809655, lng: 22.935746};
@@ -167,6 +145,8 @@
       		<p>Copyright &copy; 2018 by Łukasz Bartoś</p>
       	</div>
 		</footer>
+
+		<script src="script/script.js"></script>
   </body>
 
 </html>
