@@ -572,6 +572,19 @@ input, textarea
     width: 100%;
   }
 
+  #main-header img
+  {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #showcase h1
+  {
+    font-size: 32px;
+  }
+
     #sidebar
   {
     float: none;
@@ -586,6 +599,5 @@ input, textarea
     width: 100%;
     line-height: 1.8em;
     /* display: inline; */
-    padding-right: 10px;
   }
 }
